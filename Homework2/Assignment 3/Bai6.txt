@@ -1,0 +1,34 @@
+Bai 6: Predict the output of following programs. If there are compilation errors, then fix them:
+
+Q1:
+	Output: 30
+	- Do static int x = 10 se khai bao x = 10 mot lan duy nhat va bien x nay se ko bi thay doi boi khai bao
+	- Ham fun() la ham tham chieu, tuc la gia tri tra ve se duoc tham chieu toi 1 gia tri khac: fun() = 30 -> x = 30
+
+Q2:
+	Output: Loi
+	- Do ham lay dau vao la tham chieu x ma su dung la mot so nguyen nen se xay ra loi (Do input cua ham can la 1 dia chi da duoc cap phap)
+	
+	Sua:
+	 int fun(int x)
+
+Q3:
+	output:
+		str1 is FOR GEEKS
+		str2 is GEEKS
+	- Ham swap 2 chuoi su dung con tro va tham chieu
+	
+Q4:	
+	Output: loi
+	- Do khong the khai bao ca tham chieu va con tro dong thoi (Tham chieu can chi den gia tri, pointer can chi den dia chi)
+	Sua: int *ptr1 = ptr;
+	
+Q5:
+	Output: Khong in ra gi hoac bi loi
+	- Do con tro NULL la con tro khong co gia gia ma viec tham chieu la tham chieu toi mot gia tri (tham chieu khong the thay doi hay tham chieu toi 1 gia tri khac sau khoi tao). 
+	Nen viec tham chieu toi tro NULL se bi loi hoac khong in ra gi.
+	
+Q6:
+	Output: 10
+	- Khac voi Q1, o day x khong phai la static nen se luon duoc khai bao va xoa di moi lan trong scope cua ham fun() moi khi ham nay duoc goi.
+	- Do do ham fun() luon return 10 moi khi duoc goi.

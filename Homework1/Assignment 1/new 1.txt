@@ -1,0 +1,6 @@
+
+// Bai 2:
+
+int myNum = 1;
+int myNum1 = 1001
+

@@ -1,0 +1,74 @@
+1.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a = 10, b = 0, c;
+	try
+	{
+		if (b == 0)
+		{
+			throw "Division by zero not possible";
+			c = a / b;
+		}
+	}
+	catch (char const* ex) {
+		cout << ex;
+	}
+	return 0;
+}
+
+
+2.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x[3] = { -1,2 };
+	for (int i = 0; i < 2; i++)
+	{
+		int ex = x[i];
+		try
+		{
+			if (ex)
+				throw ex;
+			else
+				throw 'ex';
+		}
+		catch (int ex){
+			cout << "Special exception\n";
+		}
+	}
+	return 0;
+}
+
+
+3.
+
+
+#include <iostream>
+#include <exception>
+
+using namespace std;
+int main() {
+	long long i = 1;
+	try
+	{
+	char* text = new char[1000000000000000000000000];
+	}
+	catch (bad_alloc& e)
+	{
+	cout << "X";
+	}
+	catch (exception& e)
+	{
+	cout << "Y";
+	}
+	catch (int x)
+	{
+	cout << "Z";
+	}
+	return 0;
+}

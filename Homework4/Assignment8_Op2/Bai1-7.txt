@@ -1,0 +1,59 @@
+Bai 1:
+- De cho LargeAnimal ke thua ZooAnimal, chi can sua dong:
+				class LargeAnimal
+			thanh:
+				class LargeAnimal : public ZooAnimal
+				
+				
+Bai 2:
+- De su dung reptName() cua lop cha chi can sua: 
+		cout << gonzo.reptName () << endl;
+  thanh:
+		cout << gonzo.ZooAnimal::reptName () << endl;
+	
+	
+Bai 3:
+- De lop ZooAnimal su dung ham reptName tu ham dan xuat LargeAnimal, ta su dung tu khoa virtual. Tuc la sua:
+		char* reptName ();
+	thanh:
+		virtual char* reptName ();
+		
+
+Bai 4:
+- De cho LargeAnimal ke thua ZooAnimal va Mammal theo thu tu do, chi can sua dong:
+				class LargeAnimal
+			thanh:
+				class LargeAnimal : public ZooAnimal, public Mammal
+				
+
+Bai 5:
+- De su dung weight cua Mammal, Sua: 
+				if (weight < 500)
+					return cageMinimumVolume;
+				else
+					return reptminimumVolume ();
+  thanh:
+				if (Mammal::weight < 500)
+					return cageMinimumVolume;
+				else
+					return reptminimumVolume ();
+					
+					
+Bai 6:
+- Cach sua tuong tu nhu bai 5, Sua:
+				if (Mammal::weight < 500)
+					return cageMinimumVolume;
+				else
+					return reptWeight ();
+  thanh:
+				if (Mammal::weight < 500)
+					return cageMinimumVolume;
+				else
+					return ZooAnimal::reptWeight ();
+					
+					
+					
+Bai 7:
+- In ra C
+	+ Boi virtual se tim kiem ham trong lop dan xuat truoc, va o day la lop C -> su dung ham getName cua lop C
+	

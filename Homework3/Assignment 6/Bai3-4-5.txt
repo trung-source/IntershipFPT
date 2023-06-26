@@ -1,0 +1,12 @@
+Bai 3:
+Dap an: B (v=3)
+	+ Voi ham incr1 la truyen tham chieu nen v se duoc cong them 1.
+	+ Voi ham incr2 voi return x++; thi ham se thuc hien return truoc roi moi thuc hien viec cong them 1 cho x. The nen v se khong thay doi ket qua.
+
+Bai 4:
+Dap an: D
+	+ Tham chieu se duoc su dung nhieu hon la pointer boi voi tham chieu, ta se khong can phai khai bao pointer roi xoa pointer vi tham chieu se su dung luon bien duoc tham chieu.
+
+Bai 5:
+Dap an: C
+	+ Nhu o dap an D co giai thich, tham chieu khong the thay doi sau khi duoc khoi tao the nen viec tham chieu sang doi tuong khac la khong the.
